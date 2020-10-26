@@ -1,13 +1,14 @@
 /*
-1) Se dispone de los siguientes datos de los empleados de una empresa: numero
-de legajo, sueldo y antigüedad. Las ternas de datos se ingresaran en cualquier
-orden. Luego del último juego de datos se ingresara un 0 como numero de legajo.
-Se sabe que la cantidad de empleados no es más de 100. Se pide un programa
-que:
-o Imprima un listado ordenado en forma creciente por número de legajo,
-de todos aquellos empleados que superen o igualen el sueldo promedio,
-informando sus tres atributos.
-o Datos completos del o los empleados de mayor antigüedad.
+The following information is available on the employees of a company: 
+file number, salary and seniority. 
+The triples of data will be entered in any order. 
+After the last data set, a 0 will be entered as the file number.
+It is known that the number of employees is not more than 100.
+A program is requested that:
+* Print a list, ordered in increasing order by file number, 
+of all those employees who exceed or equal the average salary, 
+reporting their three attributes.
+* Complete data of the oldest employee (s).
 */
 
 #include <stdio.h>
