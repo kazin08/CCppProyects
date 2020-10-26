@@ -1,4 +1,4 @@
-/* Tp N1 Algoritmos y programacion I, catedra Kuhn, alumno: Emanuel Lupia. padr髇: 92934 */
+/* Tp N1 Algoritmos y programacion I, catedra Kuhn, alumno: Emanuel Lupia. padr贸n: 92934 */
 
 #include <stdio.h>
 
@@ -8,7 +8,7 @@ int main()
     float comic;
 
     do{
-    puts("Ingrese una opci髇 para resolver el problema:\na) Utilizando ciclo for\nb) Utilizando ciclo while\nc) Utilizando ciclo do-while\nd) Salir "); //menu inicial
+    puts("Ingrese una opci贸n para resolver el problema:\na) Utilizando ciclo for\nb) Utilizando ciclo while\nc) Utilizando ciclo do-while\nd) Salir "); //menu inicial
     scanf("%c", &letra);
     fflush(stdin);                                  //sin el fflush pasaba dos veces por el menu
 
@@ -19,7 +19,7 @@ int main()
         totalvent=0, vendedor=0, monto=0, montot=0, montov1=0, montov2=0, montov3=0, montov4=0, vend1=0, vend2=0, vend3=0, vend4=0; //vuelvo a inicializar
         for (letra = 's'; letra == 's'; totalvent++)//inicio del bucle con FOR
         {
-            puts("Ingrese el n鷐ero del vendedor: (1 al 4)");
+            puts("Ingrese el n煤mero del vendedor: (1 al 4)");
             scanf("%d", &vendedor);
             fflush(stdin);
 
@@ -65,7 +65,7 @@ int main()
             else puts("el numero ingreso no es correcto");
         }
         comic = ( montot/100.0)*20.0;                                                   //calculo de la comicion y la muestra en pantalla
-        printf("El monto total es de $%d\nDe comici髇 es $%.2f\nSe vendieron %d vehiculos\n", montot, comic, totalvent); //utilize printf porque el puts me daba error
+        printf("El monto total es de $%d\nDe comici贸n es $%.2f\nSe vendieron %d vehiculos\n", montot, comic, totalvent); //utilize printf porque el puts me daba error
         if (vend1>vend2 && vend1>vend3 && vend1>vend4)                                  //el if es para ver cual vendio mas
         {
             printf("El vendedor 1 es el que mas vendio con un monto de $%d", montov1);
@@ -91,7 +91,7 @@ int main()
         {
             totalvent ++;
 
-            puts("Ingrese el n鷐ero del vendedor: (1 al 4)");
+            puts("Ingrese el n煤mero del vendedor: (1 al 4)");
             scanf("%d", &vendedor);
             fflush(stdin);
 
@@ -137,7 +137,7 @@ int main()
             else puts("el numero ingreso no es correcto");
         }
         comic = ( montot/100.0)*20.0;
-        printf("El monto total es de $%d\nDe comici髇 es $%.2f\nSe vendieron %d vehiculos\n", montot, comic, totalvent);
+        printf("El monto total es de $%d\nDe comici贸n es $%.2f\nSe vendieron %d vehiculos\n", montot, comic, totalvent);
         if (vend1>vend2 && vend1>vend3 && vend1>vend4)                                  //el if es para ver cual vendio mas
         {
             printf("El vendedor 1 es el que mas vendio con un monto de $%d", montov1);
@@ -164,7 +164,7 @@ int main()
         {
             totalvent ++;
 
-            puts("Ingrese el n鷐ero del vendedor: (1 al 4)");
+            puts("Ingrese el n煤mero del vendedor: (1 al 4)");
             scanf("%d", &vendedor);
             fflush(stdin);
 
@@ -212,7 +212,7 @@ int main()
         } while (letra == 's');
 
         comic = ( montot/100.0)*20.0;
-        printf("El monto total es de $%d\nDe comici髇 es $%.2f\nSe vendieron %d vehiculos\n", montot, comic, totalvent);
+        printf("El monto total es de $%d\nDe comici贸n es $%.2f\nSe vendieron %d vehiculos\n", montot, comic, totalvent);
         if (vend1>vend2 && vend1>vend3 && vend1>vend4)                                  //el if es para ver cual vendio mas
         {
             printf("El vendedor 1 es el que mas vendio con un monto de $%d", montov1);
