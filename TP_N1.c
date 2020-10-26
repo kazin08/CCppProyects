@@ -1,4 +1,13 @@
-/* Tp N1 Algoritmos y programacion I, catedra Kuhn, alumno: Emanuel Lupia. padrón: 92934 */
+/* Tp N1 Algoritmos y programacion I
+We want to make a program to manage a car agency, in which we have 4 salespeople who are identified with integers between 1 and 4.
+For each sale made, the amount of the sale and the seller who made it are entered. The commission of each seller is 20% of the total sale.
+You want the program to print the total amount of the agency's sales and the total amount sold by the seller who has had the most sales (in quantity and not in money), clarifying which seller was the one who did it.
+When entering sales, the program must ask if you want to enter any more sales or not, in such a way that the user must press 's' if they want to continue entering and 'n' when they do not want to enter more sales. The user will also have the possibility to choose the way in which he wants the problem to be solved, for which the program must present a menu with the following options:
+a) Use for loop
+b) Use while loop
+c) Use do-while loop
+d) Exit
+The program will only end when the exit option is pressed. If an incorrect option is chosen, you must ask again for the option to use. This menu must be done using a switch. */
 
 #include <stdio.h>
 
