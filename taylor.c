@@ -1,9 +1,7 @@
-//punto 16) Sub programas
-//16) Diseñar una función que calcule la aproximación del seno utilizando la serie de
-//Taylor:
-//sen(x)= 1 - (x^3)/3! + (x^5)/5 - (x^7)/7! + ..........
-//Nota: Una buena aproximación está dada por el desarrollo de 10 términos como
-//mínimo.
+/* TAYLOR
+Design a function that computes the approximation of the sine using the Taylor series:
+sin(x)= 1 - (x^3)/3! + (x^5)/5 - (x^7)/7! + ..........
+Note: A good approximation is given by the expansion of at least 10 terms. */
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -14,7 +12,6 @@ double factorial(double a)
     {
         b*=i;
     }
-    printf("esto tiene el factorial de %g = %g\n", a, b);
     return b;
 }
 
@@ -25,24 +22,23 @@ double potencia(double a, double b)
     {
         c = c*a;
     }
-    printf("esto tiene potencia de %g a la %g = %g\n", a, b, c);
     return c;
 }
 
-double sen (int x)
+double sin (int x)
 {
-    double seno, algo;
+    double sine, algo;
 
-    seno = ((potencia(x,2))/factorial(2)) - ((potencia(x,4))/factorial(4)) + ((potencia(x,6))/factorial(6)) - ((potencia(x,8))/factorial(8)) + ((potencia(x,10))/factorial(10));
+    sine = ((potencia(x,2))/factorial(2)) - ((potencia(x,4))/factorial(4)) + ((potencia(x,6))/factorial(6)) - ((potencia(x,8))/factorial(8)) + ((potencia(x,10))/factorial(10));
 
-    return seno;
+    return sine;
 }
 
 int main()
 {
     int x;
-    printf("ingrese el valor del seno que desee calcular ");
+    printf("Enter the value of the sine you want to calculate ");
     scanf("%d", &x);
-    printf("el valor es %g", sen(x));
+    printf("The value is %g", sin(x));
     return 0;
 }
