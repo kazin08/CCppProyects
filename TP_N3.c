@@ -1,3 +1,8 @@
+/* TP N3
+Code to generate a "facebook" in where you can follow people and see
+who is follow by who.
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
